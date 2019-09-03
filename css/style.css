@@ -96,6 +96,10 @@ body:after {
 .bg-black {
   background: #000; }
 
+.font-white{color: #fff;}
+
+.white-font-size{font-size:19px;}
+
 .form-control {
   height: 43px;
   border-radius: 30px;
