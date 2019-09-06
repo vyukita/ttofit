@@ -51,31 +51,26 @@ h1, h2, h3, h4, h5,
 .backgound-img{
       width: 100%;
       height: 100vh;
-      background-image: url(1.jpg);
+      background-image: url("../images/ttofit/1.jpg");
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
       animation: bg-tr 20s infinite;
     }
     @keyframes bg-tr {
-
       20%{
-          background-image: url(/images/ttofit/5.jpg);
+          background-image: url("../images/ttofit/2.jpg");
       }
       40%{
-          background-image: url(/images/ttofit/5.jpg);
+          background-image: url("../images/ttofit/3.jpg");
       }
       60%{
-          background-image: url(/images/ttofit/5.jpg);
+          background-image: url("../images/ttofit/4.jpg");
       }
       80%{
-          background-image: url(/images/ttofit/5.jpg);
+          background-image: url("../images/ttofit/5.jpg");
       }
-      
-
     }
-
-
 
 .color-black-opacity-5 {
   color: rgba(0, 0, 0, 0.5); }
