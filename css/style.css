@@ -72,6 +72,28 @@ h1, h2, h3, h4, h5,
       }
     }
 
+  .main-texto{
+    position: absolute;
+    float: inherit;
+    top: 50%;
+    width: 90%;
+    height: 40%;
+    color: white;
+    z-index: 998;
+
+  }
+.main-texto-titulo {
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    }
+.main-texto-corpo {
+    font-size: 2em;
+    margin-top: 2%;
+    font-weight: 500;
+    line-height: 1.1em;
+  }
+
 .color-black-opacity-5 {
   color: rgba(0, 0, 0, 0.5); }
 
