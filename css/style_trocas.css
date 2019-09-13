@@ -192,6 +192,18 @@ body:after {
     .site-section-heading {
       font-size: 3rem; } }
 
+.titulo-trocas-devolucoes{
+  color: #2f2f2f !important;
+}
+
+.black-font{
+  color: black;
+}
+
+.bg-white{
+  background-color: white;
+}
+
 .site-footer {
   padding: 4em 0;
   background: #333333; }
@@ -369,7 +381,8 @@ body:after {
         padding: 5px 20px;
         display: inline-block;
         text-decoration: none !important;
-        color: rgba(255, 255, 255, 0.7) !important; }
+        color: #000 !important;
+    }
         .site-navbar .site-navigation .site-menu > li > a:hover, .site-navbar .site-navigation .site-menu > li > a.active {
           color: #fff !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
@@ -601,21 +614,20 @@ body:after {
   position: absolute;
   z-index: 100;
   width: 100%; }
-  .sticky-wrapper .site-navbar {
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease; }
+
+
+
   .sticky-wrapper .site-navbar .site-menu-toggle {
     color: #fff; }
     .sticky-wrapper .site-navbar .site-menu-toggle .icon-menu {
       color: #fff; }
   .sticky-wrapper .site-navbar .site-logo a {
     color: #fff; }
-  .sticky-wrapper .site-navbar .site-menu > li > a {
-    color: rgba(255, 255, 255, 0.7) !important; }
+  /* .sticky-wrapper .site-navbar .site-menu > li > a {
+    color: rgba(255, 255, 255, 0.7) !important; } */
     .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
       color: #fff !important; }
-  .sticky-wrapper.is-sticky .site-navbar {
+  .sticky-wrapper .site-navbar {
     background: #fff;
     border-bottom: 1px solid transparent;
     -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
@@ -628,7 +640,7 @@ body:after {
       color: #000; }
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
       color: #000 !important; }
-      .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
+      .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .site-navbar .site-menu > li > a.active {
         color: #fab95b !important; }
   .sticky-wrapper .shrink {
     padding-top: 10px !important;
