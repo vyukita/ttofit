@@ -49,7 +49,7 @@
           </div>
 
           <div class=" text-center mx-5">
-            <h1 class="m-0 site-logo"><a href="index.html"> <img src="images/logos/Logo1.png"></a></h1>
+            <h1 class="m-0 site-logo"><a href="index.html"> <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="images/logos/Logo1.png"></a></h1>
           </div>
 
           <div class="text-left">
@@ -261,31 +261,40 @@
   <script src="js/main.js"></script>
   <script>
     //npm install nodemailer
-
-    var nodemailer = require('nodemailer');
-
-    var transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: 'youremail@gmail.com',
-        pass: 'yourpassword'
-      }
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.site-logo img').attr('src','images/logos/Logo3.png');
+            }
+            if ($(this).scrollTop() < 100) {
+                $('.site-logo img').attr('src','images/logos/Logo1.png');
+            }
+        })
     });
-
-    var mailOptions = {
-      from: 'youremail@gmail.com',
-      to: 'myfriend@yahoo.com',
-      subject: 'Sending Email using Node.js',
-      text: 'That was easy!'
-    };
-
-    transporter.sendMail(mailOptions, function(error, info){
-      if (error) {
-        console.log(error);
-      } else {
-        console.log('Email sent: ' + info.response);
-      }
-    });
+    // var nodemailer = require('nodemailer');
+    //
+    // var transporter = nodemailer.createTransport({
+    //   service: 'gmail',
+    //   auth: {
+    //     user: 'youremail@gmail.com',
+    //     pass: 'yourpassword'
+    //   }
+    // });
+    //
+    // var mailOptions = {
+    //   from: 'youremail@gmail.com',
+    //   to: 'myfriend@yahoo.com',
+    //   subject: 'Sending Email using Node.js',
+    //   text: 'That was easy!'
+    // };
+    //
+    // transporter.sendMail(mailOptions, function(error, info){
+    //   if (error) {
+    //     console.log(error);
+    //   } else {
+    //     console.log('Email sent: ' + info.response);
+    //   }
+    // });
 
   </script>
 
